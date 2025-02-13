@@ -1,0 +1,392 @@
+[p LITE_MODE AUTOSTATIC PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 6 ]
+"492 C:\Program Files\Microchip\xc8\v1.45\sources\common\doprnt.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+"62 C:\Program Files\Microchip\xc8\v1.45\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files\Microchip\xc8\v1.45\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"62 C:\Program Files\Microchip\xc8\v1.45\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"44 C:\Program Files\Microchip\xc8\v1.45\sources\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.45\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.45\sources\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"28 C:\Program Files\Microchip\xc8\v1.45\sources\common\lwtoft.c
+[v ___lwtoft __lwtoft `(f  1 e 3 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.45\sources\pic\eeprom.c
+[v _eecpymem eecpymem `(v  1 e 1 0 ]
+"39
+[v _memcpyee memcpyee `(v  1 e 1 0 ]
+"26 C:\Users\SPIRO\Desktop\fire\fire.X\fire.c
+[v _main main `(v  1 e 1 0 ]
+"112
+[v _button button `II(v  1 e 1 0 ]
+"15 C:\Users\SPIRO\Desktop\fire\fire.X\lib.h
+[v _UART_Init UART_Init `(v  1 e 1 0 ]
+"29
+[v _UART_Write UART_Write `(v  1 e 1 0 ]
+[v i1_UART_Write UART_Write `(v  1 e 1 0 ]
+"35
+[v _UART_Send UART_Send `(v  1 e 1 0 ]
+[v i1_UART_Send UART_Send `(v  1 e 1 0 ]
+"41
+[v _ADC_Init ADC_Init `(v  1 e 1 0 ]
+"47
+[v _ADC_Read ADC_Read `(ui  1 e 2 0 ]
+"59
+[v _Lcd_Port Lcd_Port `(v  1 e 1 0 ]
+[v i1_Lcd_Port Lcd_Port `(v  1 e 1 0 ]
+"81
+[v _Lcd_Cmd Lcd_Cmd `(v  1 e 1 0 ]
+[v i1_Lcd_Cmd Lcd_Cmd `(v  1 e 1 0 ]
+"91
+[v _Lcd_Clear Lcd_Clear `(i  1 e 2 0 ]
+[v i1_Lcd_Clear Lcd_Clear `(i  1 e 2 0 ]
+"97
+[v _Lcd_Set_Cursor Lcd_Set_Cursor `(v  1 e 1 0 ]
+[v i1_Lcd_Set_Cursor Lcd_Set_Cursor `(v  1 e 1 0 ]
+"118
+[v _Lcd_Init Lcd_Init `(v  1 e 1 0 ]
+"137
+[v _Lcd_Write_Char Lcd_Write_Char `(v  1 e 1 0 ]
+[v i1_Lcd_Write_Char Lcd_Write_Char `(v  1 e 1 0 ]
+"154
+[v _Lcd_Write_String Lcd_Write_String `(v  1 e 1 0 ]
+[v i1_Lcd_Write_String Lcd_Write_String `(v  1 e 1 0 ]
+"962 C:\Program Files\Microchip\xc8\v1.45\include\pic16f877a.h
+[v _RCSTA RCSTA `VEuc  1 e 1 @24 ]
+"1057
+[v _TXREG TXREG `VEuc  1 e 1 @25 ]
+"1150
+[v _ADRESH ADRESH `VEuc  1 e 1 @30 ]
+"1157
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @31 ]
+"1323
+[v _TRISA TRISA `VEuc  1 e 1 @133 ]
+"1497
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"1997
+[v _TXSTA TXSTA `VEuc  1 e 1 @152 ]
+"2078
+[v _SPBRG SPBRG `VEuc  1 e 1 @153 ]
+"2220
+[v _ADRESL ADRESL `VEuc  1 e 1 @158 ]
+"2227
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @159 ]
+"2399
+[v _BRGH BRGH `VEb  1 e 0 @1218 ]
+"2465
+[v _CREN CREN `VEb  1 e 0 @196 ]
+"2501
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"2507
+[v _GO_nDONE GO_nDONE `VEb  1 e 0 @250 ]
+"2521
+[v _INTE INTE `VEb  1 e 0 @92 ]
+"2523
+[v _INTEDG INTEDG `VEb  1 e 0 @1038 ]
+"2525
+[v _INTF INTF `VEb  1 e 0 @89 ]
+"2541
+[v _PEIE PEIE `VEb  1 e 0 @94 ]
+"2575
+[v _RB2 RB2 `VEb  1 e 0 @50 ]
+"2621
+[v _RD0 RD0 `VEb  1 e 0 @64 ]
+"2623
+[v _RD1 RD1 `VEb  1 e 0 @65 ]
+"2625
+[v _RD2 RD2 `VEb  1 e 0 @66 ]
+"2629
+[v _RD4 RD4 `VEb  1 e 0 @68 ]
+"2631
+[v _RD5 RD5 `VEb  1 e 0 @69 ]
+"2633
+[v _RD6 RD6 `VEb  1 e 0 @70 ]
+"2635
+[v _RD7 RD7 `VEb  1 e 0 @71 ]
+"2663
+[v _SPEN SPEN `VEb  1 e 0 @199 ]
+"2683
+[v _SYNC SYNC `VEb  1 e 0 @1220 ]
+"2749
+[v _TRISB2 TRISB2 `VEb  1 e 0 @1074 ]
+"2773
+[v _TRISC6 TRISC6 `VEb  1 e 0 @1086 ]
+"2775
+[v _TRISC7 TRISC7 `VEb  1 e 0 @1087 ]
+"2799
+[v _TRMT TRMT `VEb  1 e 0 @1217 ]
+"2809
+[v _TXEN TXEN `VEb  1 e 0 @1221 ]
+"354 C:\Program Files\Microchip\xc8\v1.45\sources\common\doprnt.c
+[v _dpowers dpowers `DC[5]ui  1 s 10 dpowers ]
+"26 C:\Users\SPIRO\Desktop\fire\fire.X\fire.c
+[v _main main `(v  1 e 1 0 ]
+{
+"29
+[v main@d d `[20]uc  1 a 20 0 ]
+"28
+[v main@a a `ui  1 a 2 20 ]
+"111
+} 0
+"492 C:\Program Files\Microchip\xc8\v1.45\sources\common\doprnt.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+{
+[v sprintf@sp sp `*.4uc  1 a 1 wreg ]
+"528
+[v sprintf@val val `ui  1 a 2 30 ]
+"499
+[v sprintf@c c `c  1 a 1 33 ]
+"506
+[v sprintf@prec prec `c  1 a 1 29 ]
+"508
+[v sprintf@flag flag `uc  1 a 1 28 ]
+"494
+[v sprintf@ap ap `[1]*.4v  1 a 1 27 ]
+"492
+[v sprintf@sp sp `*.4uc  1 a 1 wreg ]
+[v sprintf@f f `*.24DCuc  1 p 1 21 ]
+"533
+[v sprintf@sp sp `*.4uc  1 a 1 32 ]
+"1541
+} 0
+"6 C:\Program Files\Microchip\xc8\v1.45\sources\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"11
+[v ___lwmod@counter counter `uc  1 a 1 20 ]
+"6
+[v ___lwmod@divisor divisor `ui  1 p 2 15 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 17 ]
+"26
+} 0
+"6 C:\Program Files\Microchip\xc8\v1.45\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"11
+[v ___lwdiv@quotient quotient `ui  1 a 2 12 ]
+"12
+[v ___lwdiv@counter counter `uc  1 a 1 14 ]
+"6
+[v ___lwdiv@divisor divisor `ui  1 p 2 7 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 9 ]
+"31
+} 0
+"28 C:\Program Files\Microchip\xc8\v1.45\sources\common\lwtoft.c
+[v ___lwtoft __lwtoft `(f  1 e 3 0 ]
+{
+[v ___lwtoft@c c `ui  1 p 2 15 ]
+"31
+} 0
+"44 C:\Program Files\Microchip\xc8\v1.45\sources\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+{
+"47
+[v ___fttol@lval lval `ul  1 a 4 44 ]
+"46
+[v ___fttol@exp1 exp1 `uc  1 a 1 48 ]
+[v ___fttol@sign1 sign1 `uc  1 a 1 43 ]
+"44
+[v ___fttol@f1 f1 `f  1 p 3 35 ]
+"73
+} 0
+"62 C:\Program Files\Microchip\xc8\v1.45\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+{
+"65
+[v ___ftmul@f3_as_product f3_as_product `um  1 a 3 30 ]
+"64
+[v ___ftmul@sign sign `uc  1 a 1 34 ]
+[v ___ftmul@cntr cntr `uc  1 a 1 33 ]
+[v ___ftmul@exp exp `uc  1 a 1 29 ]
+"62
+[v ___ftmul@f1 f1 `f  1 p 3 19 ]
+[v ___ftmul@f2 f2 `f  1 p 3 22 ]
+"157
+} 0
+"62 C:\Program Files\Microchip\xc8\v1.45\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+{
+[v ___ftpack@arg arg `um  1 p 3 7 ]
+[v ___ftpack@exp exp `uc  1 p 1 10 ]
+[v ___ftpack@sign sign `uc  1 p 1 11 ]
+"86
+} 0
+"35 C:\Users\SPIRO\Desktop\fire\fire.X\lib.h
+[v _UART_Send UART_Send `(v  1 e 1 0 ]
+{
+[v UART_Send@s s `*.26uc  1 p 2 8 ]
+"40
+} 0
+"29
+[v _UART_Write UART_Write `(v  1 e 1 0 ]
+{
+[v UART_Write@data data `uc  1 a 1 wreg ]
+[v UART_Write@data data `uc  1 a 1 wreg ]
+[v UART_Write@data data `uc  1 a 1 7 ]
+"33
+} 0
+"15
+[v _UART_Init UART_Init `(v  1 e 1 0 ]
+{
+"28
+} 0
+"154
+[v _Lcd_Write_String Lcd_Write_String `(v  1 e 1 0 ]
+{
+"156
+[v Lcd_Write_String@i i `i  1 a 2 17 ]
+"154
+[v Lcd_Write_String@a a `*.26uc  1 p 2 12 ]
+"159
+} 0
+"137
+[v _Lcd_Write_Char Lcd_Write_Char `(v  1 e 1 0 ]
+{
+[v Lcd_Write_Char@a a `uc  1 a 1 wreg ]
+"139
+[v Lcd_Write_Char@y y `uc  1 a 1 10 ]
+[v Lcd_Write_Char@temp temp `uc  1 a 1 9 ]
+"137
+[v Lcd_Write_Char@a a `uc  1 a 1 wreg ]
+"140
+[v Lcd_Write_Char@a a `uc  1 a 1 11 ]
+"152
+} 0
+"97
+[v _Lcd_Set_Cursor Lcd_Set_Cursor `(v  1 e 1 0 ]
+{
+[v Lcd_Set_Cursor@a a `uc  1 a 1 wreg ]
+"99
+[v Lcd_Set_Cursor@temp temp `uc  1 a 1 17 ]
+[v Lcd_Set_Cursor@y y `uc  1 a 1 16 ]
+[v Lcd_Set_Cursor@z z `uc  1 a 1 15 ]
+"97
+[v Lcd_Set_Cursor@a a `uc  1 a 1 wreg ]
+[v Lcd_Set_Cursor@b b `uc  1 p 1 11 ]
+"100
+[v Lcd_Set_Cursor@a a `uc  1 a 1 14 ]
+"116
+} 0
+"118
+[v _Lcd_Init Lcd_Init `(v  1 e 1 0 ]
+{
+"135
+} 0
+"91
+[v _Lcd_Clear Lcd_Clear `(i  1 e 2 0 ]
+{
+"95
+} 0
+"81
+[v _Lcd_Cmd Lcd_Cmd `(v  1 e 1 0 ]
+{
+[v Lcd_Cmd@a a `uc  1 a 1 wreg ]
+[v Lcd_Cmd@a a `uc  1 a 1 wreg ]
+"83
+[v Lcd_Cmd@a a `uc  1 a 1 10 ]
+"89
+} 0
+"59
+[v _Lcd_Port Lcd_Port `(v  1 e 1 0 ]
+{
+[v Lcd_Port@a a `uc  1 a 1 wreg ]
+[v Lcd_Port@a a `uc  1 a 1 wreg ]
+"61
+[v Lcd_Port@a a `uc  1 a 1 7 ]
+"80
+} 0
+"47
+[v _ADC_Read ADC_Read `(ui  1 e 2 0 ]
+{
+[v ADC_Read@channel channel `uc  1 a 1 wreg ]
+[v ADC_Read@channel channel `uc  1 a 1 wreg ]
+"49
+[v ADC_Read@channel channel `uc  1 a 1 11 ]
+"58
+} 0
+"41
+[v _ADC_Init ADC_Init `(v  1 e 1 0 ]
+{
+"45
+} 0
+"112 C:\Users\SPIRO\Desktop\fire\fire.X\fire.c
+[v _button button `II(v  1 e 1 0 ]
+{
+"126
+} 0
+"35 C:\Users\SPIRO\Desktop\fire\fire.X\lib.h
+[v i1_UART_Send UART_Send `(v  1 e 1 0 ]
+{
+[v i1UART_Send@s s `*.26uc  1 p 2 1 ]
+"40
+} 0
+"29
+[v i1_UART_Write UART_Write `(v  1 e 1 0 ]
+{
+[v i1UART_Write@data data `uc  1 a 1 wreg ]
+[v i1UART_Write@data data `uc  1 a 1 wreg ]
+[v i1UART_Write@data data `uc  1 a 1 0 ]
+"33
+} 0
+"154
+[v i1_Lcd_Write_String Lcd_Write_String `(v  1 e 1 0 ]
+{
+[v i1Lcd_Write_String@i Lcd_Write_String `i  1 a 2 10 ]
+[v i1Lcd_Write_String@a a `*.26uc  1 p 2 5 ]
+"159
+} 0
+"137
+[v i1_Lcd_Write_Char Lcd_Write_Char `(v  1 e 1 0 ]
+{
+[v i1Lcd_Write_Char@a a `uc  1 a 1 wreg ]
+[v i1Lcd_Write_Char@y Lcd_Write_Char `uc  1 a 1 3 ]
+[v i1Lcd_Write_Char@temp Lcd_Write_Char `uc  1 a 1 2 ]
+[v i1Lcd_Write_Char@a a `uc  1 a 1 wreg ]
+"140
+[v i1Lcd_Write_Char@a a `uc  1 a 1 4 ]
+"152
+} 0
+"97
+[v i1_Lcd_Set_Cursor Lcd_Set_Cursor `(v  1 e 1 0 ]
+{
+[v i1Lcd_Set_Cursor@a a `uc  1 a 1 wreg ]
+[v i1Lcd_Set_Cursor@temp Lcd_Set_Cursor `uc  1 a 1 10 ]
+[v i1Lcd_Set_Cursor@y Lcd_Set_Cursor `uc  1 a 1 9 ]
+[v i1Lcd_Set_Cursor@z Lcd_Set_Cursor `uc  1 a 1 8 ]
+[v i1Lcd_Set_Cursor@a a `uc  1 a 1 wreg ]
+[v i1Lcd_Set_Cursor@b b `uc  1 p 1 4 ]
+"100
+[v i1Lcd_Set_Cursor@a a `uc  1 a 1 7 ]
+"116
+} 0
+"91
+[v i1_Lcd_Clear Lcd_Clear `(i  1 e 2 0 ]
+{
+"95
+} 0
+"81
+[v i1_Lcd_Cmd Lcd_Cmd `(v  1 e 1 0 ]
+{
+[v i1Lcd_Cmd@a a `uc  1 a 1 wreg ]
+[v i1Lcd_Cmd@a a `uc  1 a 1 wreg ]
+"83
+[v i1Lcd_Cmd@a a `uc  1 a 1 3 ]
+"89
+} 0
+"59
+[v i1_Lcd_Port Lcd_Port `(v  1 e 1 0 ]
+{
+[v i1Lcd_Port@a a `uc  1 a 1 wreg ]
+[v i1Lcd_Port@a a `uc  1 a 1 wreg ]
+"61
+[v i1Lcd_Port@a a `uc  1 a 1 0 ]
+"80
+} 0
